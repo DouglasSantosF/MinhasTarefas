@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const { Tarefa } = require('../database/models');
 
-const createPost = async ({ tarefas, status }) => {
+const createTarefa = async ({ tarefas, status }) => {
   try {
     return await Tarefa.create({ tarefas, status });
   } catch (error) {
@@ -10,4 +10,14 @@ const createPost = async ({ tarefas, status }) => {
   }
 };
 
-module.exports = { createPost };
+const getAllTarefas = async () => {
+  try {
+    const tarefas = await Tarefa.findAll();
+    return tarefas;
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+};
+
+module.exports = { createTarefa, getAllTarefas };
