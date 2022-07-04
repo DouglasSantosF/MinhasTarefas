@@ -30,4 +30,15 @@ const updateTarefa = async ({ id, tarefa }) => {
   }
 };
 
-module.exports = { createTarefa, getAllTarefas, updateTarefa };
+const deleteTarefa = async ({ id }) => {
+  try {
+    const exclude = await Tarefa.destroy({ where: { id } });
+    return exclude;
+  } catch (error) {
+    return error;
+  }
+};
+
+module.exports = {
+  createTarefa, getAllTarefas, updateTarefa, deleteTarefa,
+};
