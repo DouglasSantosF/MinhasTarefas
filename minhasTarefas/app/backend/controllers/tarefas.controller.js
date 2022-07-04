@@ -29,6 +29,16 @@ const updateTarefa = async (req, res) => {
   }
 };
 
+const updateStatus = async (req, res) => {
+  try {
+    const { id, status } = req.body;
+    await tarefasService.updateStatus({ id, status });
+    return res.status(200).end();
+  } catch (error) {
+    return error;
+  }
+};
+
 const deleteTarefa = async (req, res) => {
   try {
     const { id } = req.body;
@@ -40,5 +50,5 @@ const deleteTarefa = async (req, res) => {
 };
 
 module.exports = {
-  createTarefa, getAllTarefas, updateTarefa, deleteTarefa,
+  createTarefa, getAllTarefas, updateTarefa, deleteTarefa, updateStatus,
 };
