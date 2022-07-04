@@ -20,4 +20,14 @@ const getAllTarefas = async () => {
   }
 };
 
-module.exports = { createTarefa, getAllTarefas };
+const updateTarefa = async ({ id, tarefa }) => {
+  try {
+    await Tarefa.update({ tarefa }, { where: { id } });
+    return await getAllTarefas();
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+};
+
+module.exports = { createTarefa, getAllTarefas, updateTarefa };
