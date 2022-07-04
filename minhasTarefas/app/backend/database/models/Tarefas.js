@@ -1,7 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Tarefas = sequelize.define(
     'Tarefa',
-
     {
       id: {
         type: DataTypes.INTEGER,
@@ -24,6 +23,6 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: false,
       tableName: 'tarefas',
     },
-
   );
+  return Tarefas;
 };
