@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const { Tarefa } = require('../database/models');
+const { Tarefa } = require('../models');
 
 const createTarefa = async ({ tarefas, status }) => {
   try {
