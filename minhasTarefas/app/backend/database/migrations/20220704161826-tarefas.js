@@ -1,6 +1,6 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    const tarefasTable = queryInterface.createTable('tarefas', {
+    await queryInterface.createTable('tarefas', {
 
       id: {
         type: Sequelize.INTEGER,
@@ -22,7 +22,8 @@ module.exports = {
     });
   },
 
-  async down(queryInterface, Sequelize) {
-
+  // eslint-disable-next-line no-unused-vars
+  async down(queryInterface, _Sequelize) {
+    await queryInterface.dropTable('tarefas');
   },
 };
