@@ -3,8 +3,9 @@ const tarefasService = require('../services/tarefas.service');
 const createTarefa = async (req, res) => {
   try {
     const { tarefa, status } = req.body;
+
     await tarefasService.createTarefa({ tarefa, status });
-    return res.status(201);
+    return res.status(201).end();
   } catch (error) {
     return error;
   }

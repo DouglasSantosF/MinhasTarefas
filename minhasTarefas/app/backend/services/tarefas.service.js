@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 const { Tarefa } = require('../models');
 
-const createTarefa = async ({ tarefas, status }) => {
+const createTarefa = async ({ tarefa, status }) => {
   try {
-    return await Tarefa.create({ tarefas, status });
+    return await Tarefa.create({ tarefa, status });
   } catch (error) {
     console.log(error);
     return error;
