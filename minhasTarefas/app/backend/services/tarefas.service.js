@@ -30,6 +30,16 @@ const updateTarefa = async ({ id, tarefa }) => {
   }
 };
 
+const updateStatus = async ({ id, status }) => {
+  try {
+    await Tarefa.update({ status }, { where: { id } });
+    return await getAllTarefas();
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+};
+
 const deleteTarefa = async ({ id }) => {
   try {
     const exclude = await Tarefa.destroy({ where: { id } });
@@ -40,5 +50,5 @@ const deleteTarefa = async ({ id }) => {
 };
 
 module.exports = {
-  createTarefa, getAllTarefas, updateTarefa, deleteTarefa,
+  createTarefa, getAllTarefas, updateTarefa, deleteTarefa, updateStatus,
 };
