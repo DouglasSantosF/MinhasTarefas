@@ -10,4 +10,13 @@ const createTarefa = async (req, res) => {
   }
 };
 
-module.exports = { createTarefa };
+const getAllTarefas = async (req, res) => {
+  try {
+    const tarefas = await tarefasService.getAllTarefas();
+    return res.status(200).json(tarefas);
+  } catch (error) {
+    return error;
+  }
+};
+
+module.exports = { createTarefa, getAllTarefas };
