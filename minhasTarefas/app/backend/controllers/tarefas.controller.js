@@ -41,7 +41,7 @@ const updateStatus = async (req, res) => {
 
 const deleteTarefa = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
     await tarefasService.deleteTarefa({ id });
     return res.status(204).end();
   } catch (error) {
