@@ -1,4 +1,3 @@
-/* eslint-disable no-empty-function */
 /* eslint-disable no-unused-vars */
 module.exports = {
   up: async (queryInterface, _Sequelize) => queryInterface.bulkInsert(
@@ -21,6 +20,6 @@ module.exports = {
   ),
 
   async down(queryInterface, Sequelize) {
-
+    return queryInterface.bulkDelete('tarefas', null, {});
   },
 };
