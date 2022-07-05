@@ -4,10 +4,10 @@ import listaContext from '../context';
 
 const Header = () => {
 
-  const { listaApi } = useContext(listaContext);
-  /* const [ api, setApi] = useState(listaApi); */
+  const { listaApi, tarefasApi } = useContext(listaContext);
 
-  console.log(listaApi);
+
+/*   console.log(tarefasApi); */
 
   return (
     <header>

@@ -3,15 +3,15 @@ import listaContext from "./index";
 import api from '../services/api';
 const Provider = ({ children }) => {
 
-const [ tarefasAPI, setTarefasApi] = useState('');  
-const [ listaApi , setListaApi ] = useState(tarefasAPI);
+  const [ listaApi , setListaApi ] = useState('');
+  const [ tarefasApi, setTarefasApi] = useState('');  
 
 useEffect(()=> {
   const fetchApi = () => {
 
     api
     .get("/")
-    .then((response) => setTarefasApi(response.data))
+    .then((response) => setListaApi(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
@@ -19,8 +19,12 @@ useEffect(()=> {
   fetchApi();
 },[]);
 
+useEffect( ()=> {
+ setTarefasApi(listaApi); 
+}, [listaApi]);
+
 const contextValue = {
-  listaApi
+  listaApi, setListaApi, tarefasApi, setTarefasApi
 }
 
 return(
