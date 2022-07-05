@@ -1,16 +1,11 @@
-import {React, useState, useContext} from 'react';
-import listaContext from '../context';
+import {React} from 'react';
+import '../css/Header.css';
 
 
 const Header = () => {
 
-  const { listaApi, tarefasApi } = useContext(listaContext);
-
-
-/*   console.log(tarefasApi); */
-
   return (
-    <header>
+    <header className='myHeader'>
       <h1> Lista de Tarefas </h1>
     </header>
   )
