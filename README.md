@@ -29,10 +29,6 @@ Houveram alguns desafios, como conseguir fazer a integração do front com o bac
 
  É possível também deletar e atualizar as tarefas ou seus status.
 
-**OBS:** Algumas opções de configuração dá erro, pois a api devolve de forma incorreta, por exemplo, na configuração as opções : Dificuldade:difícil, Categoria:Esporte, Tipo:verdadeiro ou falso, a api não tem essas opções de configuração então dá erro.
-Então isso pode ocorrer dependendo da combinação escolhida pelo usuário.
- 
-
 
 
 
@@ -40,6 +36,8 @@ Então isso pode ocorrer dependendo da combinação escolhida pelo usuário.
 ---
 
  Para rodar o projeto em sua máquina, é preciso ter o MySQL instalado. </br>
+ 
+ É preciso ir na pasta **app/backend**, e depois rodar o comando npm install para instalar as dependências necessárias para rodar o projeto. Apóis isso, devemos ir na pasta **app/frontend** e rodar o comando npm install novamente pra instalar as outras dependências necessárias.
 
  Depois devemos ir na pasta app/backend e verificar se tem um arquivo **.env**, caso não tenha, ele deve ser criado. </br>
 
