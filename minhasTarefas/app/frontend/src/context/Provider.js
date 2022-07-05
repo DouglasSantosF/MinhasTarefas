@@ -12,12 +12,14 @@ useEffect(()=> {
     setListaApi(apiList);
   }
   fetchApi();
+},[]);
+
+const contextValue = {
+  listaApi
 }
 
-)
-
 return(
-  <listaContext.Provider value={listaApi}>
+  <listaContext.Provider value={contextValue}>
       { children }
   </listaContext.Provider>
 )
