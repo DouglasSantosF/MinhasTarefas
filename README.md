@@ -5,7 +5,7 @@
 
 ---
 <br>
-Este projeto foi importante, pois eu pude ver como é a pressão ao tentarmos criar um projeto para ser avaliado, e caso não haja tempo, saber o que deve ser priorizado. Também aprendi a sempre fazer novos pull requests para cada nova etapa feita.
+Este projeto foi importante, pois eu pude ver como é a pressão ao se criar um projeto para ser avaliado, e caso não haja tempo, saber o que deve ser priorizado. Também aprendi a sempre fazer novos pull requests para cada nova etapa feita.
 
 <br>
 
