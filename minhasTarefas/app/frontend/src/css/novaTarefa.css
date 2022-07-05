@@ -1,0 +1,7 @@
+.formCountainer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin-left: 40px;
+  margin-top: 50px;
+}

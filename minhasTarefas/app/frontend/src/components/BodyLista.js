@@ -22,7 +22,7 @@ const BodyLista = () => {
   return(
     <div className="bodyListaContainer">
       <div className="bodyItens">
-          {mapList()}
+          {mapList}
       </div>
     </div>
   );
