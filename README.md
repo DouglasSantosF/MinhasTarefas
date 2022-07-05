@@ -1,7 +1,7 @@
 
 # Projeto Minhas Tarefas
 
- Estou foi uma atividade feita na trybe simulando um desafio técnico. Onde tive que criar toda a aplicação do zero para testar meus conhecimentos. Aqui estão algumas das habilidades testadas: **Javascript**, **CSS**, **React**, **manipulação de componentes**, **ciclos de vida de componentes**, **node.js**, **React Hooks**, **Contex API** , **rotas**, e **integragrão entre o frontend e o backend**. 
+ Esta foi uma atividade feita na trybe simulando um desafio técnico. Onde tive que criar toda a aplicação do zero para testar meus conhecimentos. Aqui estão algumas das habilidades testadas: **Javascript**, **CSS**, **React**, **manipulação de componentes**, **ciclos de vida de componentes**, **node.js**, **React Hooks**, **Contex API** , **rotas**, e **integragrão entre o frontend e o backend**. 
 
 ---
 <br>
