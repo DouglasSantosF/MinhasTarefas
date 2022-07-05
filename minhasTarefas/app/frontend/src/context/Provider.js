@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
 import listaContext from "./index";
+import api from '../services/api';
 const Provider = ({ children }) => {
 
-const [ listaApi , setListaApi ] = useState('');
+const [ tarefasAPI, setTarefasApi] = useState('');  
+const [ listaApi , setListaApi ] = useState(tarefasAPI);
 
 useEffect(()=> {
-  const fetchApi = async () => {
-    const endpoint = 'http://localhost:3002/'
-    const apiList = await fetch(endpoint).then(res => res.json);
-    console.log(endpoint);
-    setListaApi(apiList);
+  const fetchApi = () => {
+
+    api
+    .get("/")
+    .then((response) => setTarefasApi(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
   }
   fetchApi();
 },[]);

@@ -5,9 +5,9 @@ import listaContext from '../context';
 const Header = () => {
 
   const { listaApi } = useContext(listaContext);
-  const [ api, setApi] = useState(listaApi);
+  /* const [ api, setApi] = useState(listaApi); */
 
-  console.log(api);
+  console.log(listaApi);
 
   return (
     <header>
