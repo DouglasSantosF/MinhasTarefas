@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.itemListContainer {
+  border: 1px solid rgb(93, 187, 140);
+  padding: 10px;
+  margin-top: 2px;border-radius: 15px;
+  background-color: brown;
+}
+
+.delButton {
+  width: 80px;
+  height: 30px;
+  color: black;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.delButton:hover {
+  opacity: 0.8;
+}
