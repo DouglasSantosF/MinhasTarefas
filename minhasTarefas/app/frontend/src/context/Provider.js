@@ -4,10 +4,13 @@ import api from '../services/api';
 const Provider = ({ children }) => {
 
   const [ listaApi , setListaApi ] = useState('');
-  const [ tarefasApi, setTarefasApi] = useState('');  
+  const [ tarefasApi, setTarefasApi] = useState('');
+  const [loading, setLoading] = useState(true)
 
 useEffect(()=> {
   const fetchApi = () => {
+
+    setLoading(true);
 
     api
     .get("/")
@@ -15,6 +18,8 @@ useEffect(()=> {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
+
+
   }
   fetchApi();
 },[]);
@@ -24,7 +29,7 @@ useEffect( ()=> {
 }, [listaApi]);
 
 const contextValue = {
-  listaApi, setListaApi, tarefasApi, setTarefasApi
+  listaApi, setListaApi, tarefasApi, setTarefasApi, loading, setLoading
 }
 
 return(
