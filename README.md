@@ -53,9 +53,9 @@ PORTA=porta</br>
 no arquivo .env, deve ter os campos MYSQL_HOST=(e aqui seu usuário do Mysql), MYSQL_PASSWORD=(sua senha de acesso ao mysql), PORTA=(a porta onde deseja rodar o projeto).
 </br>
 
-Depois de configurar o .env, voce pode popular a tabela estando na pasta app/backend e digitando no terminal **npx sequelize-cli db:seed:all** </br>
+Depois de configurar o .env, voce pode popular a tabela estando na pasta app/backend e digitando no terminal **npm run seed** </br>
 
-Despois depos pode rodar o comando *npm run dev* para rodar o backend, e apois isto, devemos ir na pasta app/frontend e rodar o comando **npm start**
+Despois depos pode rodar o comando **npm run dev** para rodar o backend, e após isto, devemos ir na pasta app/frontend e rodar o comando **npm start**
 
 
 
