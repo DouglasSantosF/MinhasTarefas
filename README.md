@@ -11,10 +11,12 @@ Este projeto foi importante, pois eu pude ver como é a pressão ao se criar um 
 
 ### Desafios
 
-Houveram alguns desafios, como conseguir fazer a integração do front com o backend, sem ocorrer erros, e falta corrigir um bug no frontend com uma função de mapear a lista de tarefas.
+Houveram alguns desafios, como conseguir fazer a integração do frontend com o backend sem ocorrer erros, configurar o lint e usar a bliblioteca axios.
 
 
+## **MELHORIAS:**
 
+Uma melhoria para o projeto seria a dockerização do MySQL, do frontend e do backend.
 
 ---
 ---
